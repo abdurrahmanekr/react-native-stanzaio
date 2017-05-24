@@ -7,7 +7,7 @@
     "build": "make build",
     "test": "make test",
     "lint": "jshint .",
-    "validate": "npm ls",
+    "validate": "npm ls"
   },
   "pre-commit": [
     "lint",
