@@ -1,0 +1,84 @@
+{
+  "name": "react-native-stanzaio",
+  "version": "1.0.0",
+  "description": "This package uses react-native dependencies of stanza.io library",
+  "main": "index.js",
+  "scripts": {
+    "build": "make build",
+    "test": "make test",
+    "lint": "jshint .",
+    "validate": "npm ls",
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ],
+  "browser": {
+    "request": "xhr",
+    "faye-websocket": false
+  },
+  "browserify": {
+    "transform": [
+      [
+        "browserify-versionify",
+        {
+          "placeholder": "__STANZAIO_VERSION__"
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "alt-sasl-digest-md5": "^1.0.0",
+    "async": "^1.4.0",
+    "browserify-versionify": "^1.0.4",
+    "faye-websocket": "^0.10.0",
+    "hostmeta": "^2.0.0",
+    "iana-hashes": "^1.0.2",
+    "jingle": "^3.0.0",
+    "jxt": "^3.0.1",
+    "jxt-xmpp": "^2.0.0",
+    "jxt-xmpp-types": "^3.0.0",
+    "lodash.assign": "^3.0.0",
+    "react-native-browser-builtins": "^1.0.0",
+    "lodash.filter": "^3.1.0",
+    "lodash.foreach": "^3.0.2",
+    "lodash.isarray": "^3.0.1",
+    "lodash.uniq": "^3.1.0",
+    "request": "^2.53.0",
+    "rn-nodeify": "^1.0.0",
+    "react-native-crypto": "^2.0.1",
+    "sasl-anonymous": "^0.1.0",
+    "sasl-external": "^0.1.0",
+    "sasl-plain": "^0.1.0",
+    "sasl-scram-sha-1": "^1.1.0",
+    "sasl-x-oauth2": "^0.1.0",
+    "saslmechanisms": "^0.1.1",
+    "uuid": "^2.0.1",
+    "wildemitter": "^1.0.1",
+    "xhr": "^2.0.1",
+    "xmpp-jid": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "jshint": "^2.6.3",
+    "make-better": "^0.4.1",
+    "precommit-hook": "^3.0.0",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.0",
+    "uglify-js": "^2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdurrahmanekr/react-native-stanzaio.git"
+  },
+  "keywords": [
+    "react-native-stanza"
+  ],
+  "author": "Abdurrahman Eker <info@avarekodcu.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abdurrahmanekr/react-native-stanzaio/issues"
+  },
+  "homepage": "https://github.com/abdurrahmanekr/react-native-stanzaio#readme"
+}
